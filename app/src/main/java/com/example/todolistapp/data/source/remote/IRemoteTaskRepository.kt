@@ -2,7 +2,7 @@ package com.example.todolistapp.data.source.remote
 
 interface IRemoteTaskRepository {
 
-    fun readAll(): List<RemoteTask>
-    fun saveTasks(tasksList: List<RemoteTask>)
+    suspend fun readAll(): List<RemoteTask>
+    suspend fun saveTasks(tasksList: List<RemoteTask>)
 
 }

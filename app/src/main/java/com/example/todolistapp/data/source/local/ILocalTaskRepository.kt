@@ -6,11 +6,11 @@ interface ILocalTaskRepository {
 
     suspend fun readAll(): List<LocalTask>
     suspend fun readOne(id: String): LocalTask
-    suspend fun create(task: LocalTask): LocalTask
-    suspend fun createAll(taskList: List<LocalTask>)
-    suspend fun update(task: LocalTask): LocalTask
-    suspend fun delete(id: String): LocalTask
+    suspend fun create(localTask: LocalTask): LocalTask
+    suspend fun createAll(localTaskList: List<LocalTask>): List<LocalTask>
+    suspend fun update(localTask: LocalTask): LocalTask
+    suspend fun delete(id: String)
     suspend fun deleteAll()
-    fun getSteam(): Flow<List<LocalTask>>
+    fun getStream(): Flow<List<LocalTask>>
 
 }

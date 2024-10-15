@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ToDoListApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="switch_text">Completar  ‎</string>
+    <string name="title">Title</string>
+    <string name="create_button_text">Crear tarea</string>
+    <string name="body">Body</string>
+    <string name="create_task_button_text">Create task button</string>
 </resources>
