@@ -7,5 +7,5 @@
     <string name="create_button_text">Crear tarea</string>
     <string name="body">Body</string>
     <string name="create_task_button_text">Create task button</string>
-    <string name="detail_switch_text">Estado‎</string>
+    <string name="detail_switch_text">Estado‎ </string>
 </resources>
