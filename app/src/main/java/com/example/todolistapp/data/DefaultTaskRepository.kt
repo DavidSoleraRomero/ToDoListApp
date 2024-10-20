@@ -25,7 +25,7 @@ class DefaultTaskRepository @Inject constructor(
     }
 
     override suspend fun readOne(id: String): Task {
-        TODO("Not yet implemented")
+        return localTaskRepository.readOne(id).toTask()
     }
 
     override suspend fun create(task: Task): Task {

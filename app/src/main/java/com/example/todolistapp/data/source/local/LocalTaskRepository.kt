@@ -16,7 +16,7 @@ class LocalTaskRepository @Inject constructor(): ILocalTaskRepository {
     override suspend fun readAll(): List<LocalTask> = _localTaskList.toList()
 
     override suspend fun readOne(id: String): LocalTask {
-        TODO("Not yet implemented")
+        return this._localTaskList.single { it.id == id }
     }
 
     override suspend fun create(localTask: LocalTask): LocalTask {
